@@ -1,0 +1,46 @@
+1. Given the following class, write 3 methods that can be used to return an array that has no duplicates.
+@amit
+Three implementations have been provided:
+1. Deduplication after sorting the int[]
+2. Deduplication using HashSet
+3. Deduplication using LinkedHashSet
+
+2. You should define a method signature that you feel is appropriate to the problem.
+@amit
+The signatures of the methods have been kept consistent through out.
+int[] returnArrayWithoutDuplicates(int[] input) in SortDeDup.java
+int[] returnArrayWithoutDuplicates(int[] inputArray) in DeDupUsingSet.java
+int[] returnArrayWithoutDuplicates(int[] inputArray) in DeDupRetainOrder.java
+
+3. We would prefer to see three implementations (one that should take into consideration #4 below) and an explanation of what use-cases are suitable to each implementation 
+@amit
+Though three methods in a single class could have been written, however three different classes have been created to avoid ambiguity.
+If three methods are written in single class then the names of the method will be changed
+
+4. What if we need to retain the original order?
+@amit
+Please use DeDupRetainOrder.java
+
+5. What are the positives and negatives of your solution?
+@amit
+a. SortDeDup.java
+   Positives: It is a very efficient algorithm 
+b. DeDupUsingSet.java
+   Positives: Since this uses java collections HashSet, the alorithm will be efficient
+   Negatives: There could be an overhead of additional memory when HashSet is used.
+c. DeDupRetainOrder.java
+   Positives: Since this uses java collections LinkedHashSet, the alorithm will be efficient
+   Negatives: There could be an overhead of additional memory when LinkedHashSet is used.
+    
+6. Can you implement it another way so as to avoid the negatives?
+@amit
+The memory overhead will be nominal, therefore we do not need to re-implement it.
+
+7. Your solution should be testable and “production ready.”
+@amit
+Java's logger has been used, try-catch blocks introduced, comments for the classes, methods as well as critical code part 
+have been entered.
+
+8. Your solution should be posted to a public github repo that SEI can clone.
+@amit
+It is checked-in in Github.
